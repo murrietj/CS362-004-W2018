@@ -1,0 +1,28 @@
+ID: dominion-1
+Severity: Major
+Priority: Major
+Version: assignment-2 branch
+Description: 
+	After playing the Smithy card, the player ends up with 1 less card than 
+    expected in his hand and one more than expected in his deck. It seems that 
+    2 cards are being drawn instead of 3.
+How to reproduce:
+	Initialize a game with Smithy as a playable card and at least 2 players. On 
+    any of the player’s turn, make sure they have a Smithy in their hand, possibly 
+    by explicitly placing it in their hand. Then simply playing the card. The bug 
+    seems to be persistent regardless of any other input (e.g. deck size, hand size, 
+    discard pile, number of players, etc.).
+
+ID: dominion-2
+Severity: Major
+Priority: Major
+Version: assignment-2 branch
+Description:
+	After playing the Adventurer card, the player doesn’t have two additional 
+    treasure cards in his hand as he should.
+How to reproduce:
+	Initialize a game with Adventurer as a playable card and at least 2 players. On 
+    any of the player’s turn, make sure they have an Adventurer in their hand, possibly 
+    by explicitly placing it in their hand. Then simply playing the card. The bug seems 
+    to be persistent regardless of any other input (e.g. deck size, hand size, discard 
+    pile, number of players, etc.).
